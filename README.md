@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="">
 <style>
 </style>
-<script src="style.css.txt"></script>
+<script src="style.css"></script>
 <body>
 
 <img src="img_la.jpg" alt="LA" style="width:100%">
