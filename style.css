@@ -5,12 +5,8 @@
 	background-color:greenyellow;
 	text-align:center;
 	font-weight:900;
-}
-.header a, p, h1{
-	color:black;
+	font-size:30px;
 	font-family:helvetica;
-	margin:10px;
-	text-align:center;
 }
 h1{
 	font-size:30px;
@@ -59,6 +55,9 @@ h1{
 }
 .greentext h1, .greentext p {
 	color:#1eb300;
+	font-family:helvetica;
+	text-align:center;
+	margin:0;
 }
 html{
 	justify-content: center;
