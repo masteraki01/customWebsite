@@ -24,13 +24,12 @@ h1{
     justify-content: center; /* Center the icon inside the anchor tag */
     align-items: center;
     width: 50px; /* Optional: define a width for the anchor tag */
-    height: 50px; /* Optional: define a height for the anchor tag */
 }
 .social-icons {
     display: flex; /* Flexbox layout */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically (if needed) */
-    gap: 20px; /* Optional: spacing between icons */
+    //gap: 20px; /* Optional: spacing between icons */
 }
 .icons img {
     max-width: 100%; /* Ensure the image scales properly */
