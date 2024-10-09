@@ -57,7 +57,7 @@ h1{
     justify-content: center;      /* Center items horizontally */
     align-items: center;          /* Center items vertically */
 }
-.greentext h1, p {
+.greentext h1, .greentext p {
 	color:#1eb300;
 }
 html{
