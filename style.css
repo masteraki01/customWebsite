@@ -6,13 +6,6 @@
 	text-align:center;
 	font-weight:900;
 }
-.header a {
-	display:inline-grid;
-	margin:fit-contentbox;
-	padding:auto;
-	font-family:helvetica;
-	
-}
 .header a, p, h1{
 	color:black;
 	font-family:helvetica;
@@ -21,24 +14,35 @@
 }
 h1{
 	font-size:30px;
+	font-weight:bolder;
 }
 .contentbox{
     background-color:greenyellow;
 }
-.social-icons a{
-	text-align:center;
-	display:inline-block;
-	margin:fit-content;
-	padding:0;
+.icons {
+    display: flex;
+    justify-content: center; /* Center the icon inside the anchor tag */
+    align-items: center;
+    width: 50px; /* Optional: define a width for the anchor tag */
+    height: 50px; /* Optional: define a height for the anchor tag */
+}
+.social-icons {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    gap: 20px; /* Optional: spacing between icons */
+}
+.icons img {
+    max-width: 100%; /* Ensure the image scales properly */
+    max-height: 100%;
 }
 .social-icons img{
-	max-height:20px;
+	max-height:30px;
 	border-radius:0px;
 	box-shadow:0 0 0 0;
 	padding:0px;
 	margin:0;
 }
-
  img{
 	border-radius:20px;
 	width:auto;
@@ -55,7 +59,12 @@ h1{
     align-items: center;          /* Center items vertically */
 }
 html{
+	justify-content: center;
+	align-items:center;
 	background-color:greenyellow;
+	height: 100%; /* Ensure the full height of the page */
+	margin: 0;
+	display: flex;
 }
 
 
