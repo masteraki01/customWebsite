@@ -25,17 +25,18 @@ h1{
 .contentbox{
     background-color:greenyellow;
 }
-.social-icons a{
-	color:blue
+.social_icons a{
+	text-align:center;
+	display:inline-block;
+	margin:fit-content;
+	padding:0;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+.social-icons img{
+	max-height:20px;
+	border-radius:0px;
+	box-shadow:0 0 0 0;
+	padding:0px;
+	margin:0;
 }
 
  img{
