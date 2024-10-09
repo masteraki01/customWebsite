@@ -22,11 +22,12 @@ About
 </head>
 <body>
 
+<div class="center-container">
 <img src="June_2020_Painting-1024x855.jpg">
-
+</div>
 <div class="contentbox">
- <h1>"Love is the most powerful thing in this universe"</h1>
- <p>- Johnson Do
+ <h1>Artist that breaks bounderies</h1>
+ <p>Johnson Do
  </p>
 </div>
 </body>
