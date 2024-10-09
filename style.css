@@ -19,10 +19,26 @@
 	margin:10px;
 	text-align:center;
 }
+h1{
+	font-size:30px;
+}
 .contentbox{
     background-color:greenyellow;
 }
-img{
+.social-icons a{
+	color:blue
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+ img{
 	border-radius:20px;
 	width:auto;
 	height:100%;
@@ -40,3 +56,5 @@ img{
 html{
 	background-color:greenyellow;
 }
+
+
