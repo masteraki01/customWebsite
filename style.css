@@ -24,6 +24,18 @@
 }
 img{
 	border-radius:20px;
+	width:auto;
+	height:100%;
+	max-height:250px;
+	display:inline-block;
+	margin:20px;
+	padding:0;
+	box-shadow:0 0 0 5px white;
+}
+.center-container {
+    display: flex;                /* Enable flexbox */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;          /* Center items vertically */
 }
 html{
 	background-color:greenyellow;

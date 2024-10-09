@@ -22,12 +22,12 @@ About
 </head>
 <body>
 
-<img src="https://johnsondo.com/wp-content/uploads/2020/12/June_2020_Painting-1024x855.jpg" alt="LA" style="width:100%">
+<img src="https://johnsondo.com/wp-content/uploads/2020/12/June_2020_Painting-1024x855.jpg">
 
 <div class="contentbox">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
+ <h1>"Love is the most powerful thing in this universe"</h1>
+ <p>- Johnson Do
+ </p>
 </div>
 </body>
 </html>
