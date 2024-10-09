@@ -22,7 +22,7 @@ About
 </head>
 <body>
 
-<img src="https://johnsondo.com/wp-content/uploads/2020/12/June_2020_Painting-1024x855.jpg">
+<img src="June_2020_Painting-1024x855.jpg">
 
 <div class="contentbox">
  <h1>"Love is the most powerful thing in this universe"</h1>
