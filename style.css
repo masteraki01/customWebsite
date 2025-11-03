@@ -61,8 +61,15 @@ h1{
 	font-size:30px;
 	font-weight:bolder;
 }
-.contentbox{
-
+.companylogos{
+	align-content:center;
+	display:flex;
+	justify-content:center;
+}
+.companylogos img{
+	min-height:10px;
+	max-height:25px;
+	padding:10px;
 }
 .icons {
     display: flex;
