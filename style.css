@@ -100,9 +100,6 @@ body{
     justify-content: center;      
     align-items: center;        
 }
-.center-container p{
-	margin:20px;
-}
 .greentext h1, .greentext p {
 	font-family:helvetica;
 	text-align:center;
