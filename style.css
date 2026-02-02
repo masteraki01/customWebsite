@@ -17,7 +17,7 @@ html{
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	margin-bottom:0px;
+	margin-top:10px;
 }
 .subtitle{
 	padding:0px;
@@ -40,7 +40,6 @@ html{
 	height:100%;
 	max-height:100px;
 	text-align:left;
-
 	font-weight:900;
 	font-size:30px;
 	display:inline-block;
@@ -56,10 +55,12 @@ h1,h2,h3,h4,p,a{
 	color:#1eb300;
 	padding:0px;
 	margin:0px;
+	color:
 }
 h1{
 	font-size:30px;
 	font-weight:bolder;
+
 }
 .companylogos{
 	align-content:center;
