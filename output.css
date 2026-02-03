@@ -211,6 +211,15 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-100 {
+    margin-top: calc(var(--spacing) * 100);
+  }
   .mr-0 {
     margin-right: calc(var(--spacing) * 0);
   }
@@ -240,6 +249,9 @@
   }
   .inline-flex {
     display: inline-flex;
+  }
+  .table {
+    display: table;
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -280,8 +292,14 @@
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -352,6 +370,9 @@
   .object-bottom {
     object-position: bottom;
   }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -363,6 +384,12 @@
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
+  }
+  .p-100 {
+    padding: calc(var(--spacing) * 100);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -411,9 +438,16 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow-xs {
     --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:bg-green-950 {
     &:hover {
@@ -682,6 +716,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -708,6 +747,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
     }
   }
 }
