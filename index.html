@@ -19,7 +19,7 @@
 
 <nav class="bg-lime-500 fixed w-full z-20 top-0 start-0 border-b border-default">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         
         <span class="self-center text-xl text-heading font-semibold whitespace-nowrap font-extrabold">JOHNSON DO</span>
         <!--<span class="h6 text-white ">Graphic Designer | Illustrator | 2d/3d Game</span>-->
@@ -29,12 +29,23 @@
         <button type="button" class="rounded-2xl text-heading bg-gradient-to-r from-lime-300 to-yellow-300 hover:bg-gradient-to-l hover:from-lime-300 hover:to-yellow-300 focus:ring-4 focus:outline-blue-400 focus:ring-yellow-200 dark:focus:ring-yellow-300 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5 hover:outline-3 outline-white">Work Together</button>
 
         </a>
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-sticky" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
-        </button>
-        
+        <details class="relative inline-block">
+  <summary class="md:hidden list-none cursor-pointer justify-left bg-green-600 text-white px-4 py-2 rounded">
+    =
+  </summary>
+
+  <div class="object=left mt-2 w-full bg-white shadow rounded sm:hidden ">
+    <a class="block px-4 py-2 hover:bg-gray-100" href="#">Item 1</a>
+    <a class="block px-4 py-2 hover:bg-gray-100" href="#">Item 2</a>
+    <a class="block px-4 py-2 hover:bg-gray-100" href="#">Item 2</a>
+    <a class="block px-4 py-2 hover:bg-gray-100" href="#">Item 2</a>
+    <a class="block px-4 py-2 hover:bg-gray-100" href="#">Item 2</a>
+  </div>
+</details>
+
     </div>
+    
+    
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
         <li>
@@ -128,15 +139,15 @@
 <footer class="bg-lime-500 p-5 object-bottom">
 
       <div class="sm:flex sm:items-center sm:justify-center">
-          <span class="text-sm text-body sm:text-center">© 2025 <a href="https://flowbite.com/" class="hover:underline">Johnson Do</a>. All Rights Reserved.
+          <span class="text-sm text-body sm:text-center">© 2025 <a class="hover:underline">Johnson Do</a>. All Rights Reserved.
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a href="#" class="text-body hover:text-heading">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg>
                 <span class="sr-only">Facebook page</span>
             </a>
             <a href="#" class="text-body hover:text-heading ms-5 justify-center">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/></svg>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height=24  viewBox="0 0 24 24 fill-current"><path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/></svg>
             <span class="sr-only">Twitter page</span>
             </a>
               </div>
