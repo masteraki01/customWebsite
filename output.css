@@ -694,6 +694,42 @@
       }
     }
   }
+  .md\:hover\:text-white {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+  .md\:hover\:text-yellow-200 {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-yellow-200);
+        }
+      }
+    }
+  }
+  .md\:hover\:text-yellow-300 {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-yellow-300);
+        }
+      }
+    }
+  }
+  .md\:hover\:text-yellow-500 {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-yellow-500);
+        }
+      }
+    }
+  }
   .rtl\:space-x-reverse {
     &:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) {
       :where(& > :not(:last-child)) {
