@@ -326,6 +326,15 @@
   .h-auto {
     height: auto;
   }
+  .max-h-3 {
+    max-height: calc(var(--spacing) * 3);
+  }
+  .max-h-5 {
+    max-height: calc(var(--spacing) * 5);
+  }
+  .max-h-10 {
+    max-height: calc(var(--spacing) * 10);
+  }
   .w-2xl {
     width: var(--container-2xl);
   }
