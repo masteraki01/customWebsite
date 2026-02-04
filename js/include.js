@@ -16,7 +16,7 @@ fetch("components/navbar.html")
     fetch("components/menu.html")
   .then(response => response.text())
   .then(data => {
-    document.getElementById("menu").innerHTML = data;
+    document.getElementById("menu-list").innerHTML = data;
   })
-  .catch(err => console.error("menu load failed:", err));
+  .catch(err => console.error("menu-list load failed:", err));
 
