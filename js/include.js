@@ -13,3 +13,10 @@ fetch("components/navbar.html")
   })
   .catch(err => console.error("footer load failed:", err));
 
+    fetch("components/menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu").innerHTML = data;
+  })
+  .catch(err => console.error("menu load failed:", err));
+
