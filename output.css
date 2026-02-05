@@ -677,6 +677,11 @@
       display: none;
     }
   }
+  .sm\:min-h-screen {
+    @media (width >= 40rem) {
+      min-height: 100vh;
+    }
+  }
   .sm\:grid-flow-col {
     @media (width >= 40rem) {
       grid-auto-flow: column;
