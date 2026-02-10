@@ -216,8 +216,14 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .mx-\[\%\] {
+    margin-inline: %;
+  }
   .mx-\[0\%\] {
     margin-inline: 0%;
+  }
+  .mx-\[1\%\] {
+    margin-inline: 1%;
   }
   .mx-\[5\%\] {
     margin-inline: 5%;
@@ -409,6 +415,9 @@
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -709,6 +718,11 @@
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:p-10 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 10);
     }
   }
   .md\:text-black {
