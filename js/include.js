@@ -1,4 +1,11 @@
-  fetch("components/menumain.html")
+fetch("components/navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  })
+  .catch(err => console.error("Navbar load failed:", err));
+
+fetch("components/menumain.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("menumain").innerHTML = data;
@@ -12,17 +19,6 @@ fetch("components/menu.html")
     document.getElementById("menu-list").innerHTML = data;
   })
   .catch(err => console.error("menu-list load failed:", err));
-
-
-fetch("components/navbar.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("navbar").innerHTML = data;
-  })
-  .catch(err => console.error("Navbar load failed:", err));
-
-
-
 
   fetch("components/footer.html")
   .then(response => response.text())
