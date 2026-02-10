@@ -12,7 +12,7 @@ fetch("components/menu.html")
   })
   .catch(err => console.error("menu-list load failed:", err));
 
-fetch("components/menu.html")
+fetch("components/menu_list_main.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("menu-list-main").innerHTML = data;
