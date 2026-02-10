@@ -1,18 +1,17 @@
-module.exports = {
-  darkMode: 'dark', // <-- enables class-based dark mode
-  content: ['./**/*.html'], // paths to your HTML files
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
 fetch("components/navbar.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
   })
   .catch(err => console.error("Navbar load failed:", err));
+
+      fetch("components/menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu-list").innerHTML = data;
+  })
+  .catch(err => console.error("menu-list load failed:", err));
+
 
   fetch("components/footer.html")
   .then(response => response.text())
@@ -21,12 +20,6 @@ fetch("components/navbar.html")
   })
   .catch(err => console.error("footer load failed:", err));
 
-    fetch("components/menu.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("menu-list").innerHTML = data;
-  })
-  .catch(err => console.error("menu-list load failed:", err));
 
 
   
