@@ -11,6 +11,7 @@
     --color-yellow-100: oklch(97.3% 0.071 103.193);
     --color-yellow-200: oklch(94.5% 0.129 101.54);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
+    --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-lime-300: oklch(89.7% 0.196 126.665);
     --color-lime-400: oklch(84.1% 0.238 128.85);
@@ -460,6 +461,9 @@
   .whitespace-pre-line {
     white-space: pre-line;
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-gray-800 {
     color: var(--color-gray-800);
   }
@@ -722,9 +726,9 @@
       }
     }
   }
-  .dark\:bg-black {
+  .dark\:bg-gray-900 {
     @media (prefers-color-scheme: dark) {
-      background-color: var(--color-black);
+      background-color: var(--color-gray-900);
     }
   }
   .dark\:bg-lime-400 {
@@ -742,14 +746,19 @@
       background-color: var(--color-red-500);
     }
   }
-  .dark\:bg-white {
+  .dark\:bg-yellow-400 {
     @media (prefers-color-scheme: dark) {
-      background-color: var(--color-white);
+      background-color: var(--color-yellow-400);
     }
   }
   .dark\:bg-yellow-500 {
     @media (prefers-color-scheme: dark) {
       background-color: var(--color-yellow-500);
+    }
+  }
+  .dark\:text-white {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-white);
     }
   }
   .dark\:focus\:ring-yellow-300 {

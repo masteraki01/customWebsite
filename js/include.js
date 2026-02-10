@@ -20,9 +20,26 @@ fetch("components/navbar.html")
   })
   .catch(err => console.error("menu-list load failed:", err));
 
-module.exports = {
-  darkMode: 'class', // important
-  content: ["./*.html", "./js/**/*.js"],
-  theme: { extend: {} },
-  plugins: [],
-}
+
+  // Wait until DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return; // in case the button isn't on this page
+
+  // Apply saved theme from previous visits
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+  }
+
+  // Toggle theme on click
+  btn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+
+    // Save user preference
+    if (document.documentElement.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+});
