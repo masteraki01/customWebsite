@@ -5,5 +5,5 @@
 }
 
 .img-grid-content{
-    @apply aspect-[4/3] overflow-hidden;
+    @apply aspect-[5/3] overflow-hidden;
 }

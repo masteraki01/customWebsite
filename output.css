@@ -255,12 +255,6 @@
   .aspect-\[1\/1\] {
     aspect-ratio: 1/1;
   }
-  .aspect-\[4\/3\] {
-    aspect-ratio: 4/3;
-  }
-  .aspect-\[5\/3\] {
-    aspect-ratio: 5/3;
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -742,7 +736,7 @@
   }
 }
 .img-grid-content {
-  aspect-ratio: 4/3;
+  aspect-ratio: 5/3;
   overflow: hidden;
 }
 @property --tw-rotate-x {
