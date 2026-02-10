@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 @theme{
-    --bg-green-500: bg-black;
+    --nightmode: bg-black;
 }
-.dark{
-    
+
+a, h1, p {
+    color:black;
 }
+
 .img-grid{
     @apply mx-[0%] p-2 grid grid-cols-2 gap-5 md:gap-6 md:mx-[10%] md:grid-cols-3 md:p-10;
 }

@@ -1,4 +1,12 @@
-// Load navbar into every page
+module.exports = {
+  darkMode: 'dark', // <-- enables class-based dark mode
+  content: ['./**/*.html'], // paths to your HTML files
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
 fetch("components/navbar.html")
   .then(response => response.text())
   .then(data => {
@@ -21,25 +29,4 @@ fetch("components/navbar.html")
   .catch(err => console.error("menu-list load failed:", err));
 
 
-  // Wait until DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementById('themeToggle');
-  if (!btn) return; // in case the button isn't on this page
-
-  // Apply saved theme from previous visits
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark');
-  }
-
-  // Toggle theme on click
-  btn.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-
-    // Save user preference
-    if (document.documentElement.classList.contains('dark')) {
-      localStorage.setItem('theme', 'dark');
-    } else {
-      localStorage.setItem('theme', 'light');
-    }
-  });
-});
+  
