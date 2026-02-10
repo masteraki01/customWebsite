@@ -15,9 +15,9 @@ fetch("components/menu.html")
 fetch("components/menumain.html")
   .then(response => response.text())
   .then(data => {
-    document.getElementById("menu-list-main").innerHTML = data;
+    document.getElementById("menumain").innerHTML = data;
   })
-  .catch(err => console.error("menu-list-main load failed:", err));
+  .catch(err => console.error("menumain load failed:", err));
 
 
   fetch("components/footer.html")
