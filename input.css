@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.img-grid{
+    @apply mx-[0%] p-2 grid grid-cols-2 gap-5 md:gap-6 md:mx-[10%] md:grid-cols-3 md:p-10;
+}
+
+.img-grid-content{
+    @apply aspect-[4/3] overflow-hidden;
+}
