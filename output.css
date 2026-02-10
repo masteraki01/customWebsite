@@ -241,6 +241,12 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .mx-\[0\%\] {
+    margin-inline: 0%;
+  }
+  .mx-\[1\%\] {
+    margin-inline: 1%;
+  }
   .mx-\[5\%\] {
     margin-inline: 5%;
   }
@@ -322,8 +328,14 @@
   .table {
     display: table;
   }
+  .aspect-\[1\/1\] {
+    aspect-ratio: 1/1;
+  }
   .aspect-\[2\/3\] {
     aspect-ratio: 2/3;
+  }
+  .aspect-\[3\/3\] {
+    aspect-ratio: 3/3;
   }
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
@@ -436,6 +448,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -468,6 +483,9 @@
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -967,6 +985,11 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
+  .md\:mx-\[10\%\] {
+    @media (width >= 48rem) {
+      margin-inline: 10%;
+    }
+  }
   .md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 0);
@@ -1010,6 +1033,16 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:gap-6 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 6);
     }
   }
   .md\:space-y-6 {
@@ -1109,6 +1142,13 @@
         @media (hover: hover) {
           color: var(--color-yellow-300);
         }
+      }
+    }
+  }
+  .md\:max-\[5\%\]\:grid-cols-3 {
+    @media (width >= 48rem) {
+      @media (width < 5%) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
     }
   }
