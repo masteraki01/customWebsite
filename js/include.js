@@ -20,3 +20,9 @@ fetch("components/navbar.html")
   })
   .catch(err => console.error("menu-list load failed:", err));
 
+module.exports = {
+  darkMode: 'class', // important
+  content: ["./*.html", "./js/**/*.js"],
+  theme: { extend: {} },
+  plugins: [],
+}
