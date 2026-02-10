@@ -5,6 +5,14 @@ fetch("components/navbar.html")
   })
   .catch(err => console.error("Navbar load failed:", err));
 
+  fetch("components/menumain.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menumain").innerHTML = data;
+  })
+  .catch(err => console.error("menumain load failed:", err));
+
+
 fetch("components/menu.html")
   .then(response => response.text())
   .then(data => {
@@ -12,12 +20,6 @@ fetch("components/menu.html")
   })
   .catch(err => console.error("menu-list load failed:", err));
 
-fetch("components/menumain.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("menumain").innerHTML = data;
-  })
-  .catch(err => console.error("menumain load failed:", err));
 
 
   fetch("components/footer.html")
