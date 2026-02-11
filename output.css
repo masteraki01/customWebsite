@@ -19,7 +19,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
-    --container-2xl: 42rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-xl: 1.25rem;
@@ -736,7 +735,7 @@
   }
 }
 .img-grid-comics {
-  margin-inline: 10%;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: calc(var(--spacing) * 0);
@@ -765,8 +764,7 @@
 .img-content-comics {
   margin: auto;
   aspect-ratio: full;
-  min-height: calc(1/2 * 100%);
-  max-width: var(--container-2xl);
+  max-width: calc(1/1 * 100%);
 }
 .img-content-full {
   aspect-ratio: full;
