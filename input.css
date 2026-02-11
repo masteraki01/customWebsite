@@ -5,12 +5,18 @@
 .img-grid{
     @apply mx-[0%] p-0 grid grid-cols-1 gap-0 md:gap-6 md:mx-[10%] md:grid-cols-3 md:p-10;
 }
-
+.img-grid-comics{
+    @apply mx-[10%] p-0 grid grid-cols-1 gap-0 md:gap-0 md:mx-[10%] md:grid-cols-1 md:p-0;
+}
 .img-grid-content{
     @apply aspect-[5/3] overflow-hidden;
 }
 .img-content-sq{
     @apply aspect-[3/3] overflow-hidden;
+    
+}
+.img-content-comics{
+    @apply aspect-[full] m-auto max-w-2xl;
 }
 .img-content-full{
     @apply aspect-[full];
