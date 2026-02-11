@@ -10,7 +10,6 @@
     --color-yellow-100: oklch(97.3% 0.071 103.193);
     --color-yellow-200: oklch(94.5% 0.129 101.54);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
-    --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-lime-300: oklch(89.7% 0.196 126.665);
     --color-lime-500: oklch(76.8% 0.233 130.85);
     --color-green-600: oklch(62.7% 0.194 149.214);
@@ -28,7 +27,6 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --font-weight-extralight: 200;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -258,9 +256,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .aspect-\[1\/1\] {
     aspect-ratio: 1/1;
   }
@@ -300,17 +295,11 @@
   .flex-1 {
     flex: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .list-none {
     list-style-type: none;
@@ -449,10 +438,6 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
-  .font-extralight {
-    --tw-font-weight: var(--font-weight-extralight);
-    font-weight: var(--font-weight-extralight);
-  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -479,16 +464,9 @@
   .italic {
     font-style: italic;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-white {
     outline-color: var(--color-white);
@@ -512,10 +490,10 @@
       }
     }
   }
-  .hover\:bg-yellow-500 {
+  .hover\:bg-yellow-200 {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-yellow-500);
+        background-color: var(--color-yellow-200);
       }
     }
   }
@@ -686,11 +664,11 @@
       padding: calc(var(--spacing) * 0);
     }
   }
-  .md\:hover\:bg-yellow-500 {
+  .md\:hover\:bg-yellow-200 {
     @media (width >= 48rem) {
       &:hover {
         @media (hover: hover) {
-          background-color: var(--color-yellow-500);
+          background-color: var(--color-yellow-200);
         }
       }
     }
@@ -756,6 +734,9 @@
 .img-content-sq {
   aspect-ratio: 3/3;
   overflow: hidden;
+}
+.img-content-full {
+  aspect-ratio: full;
 }
 .sec-header {
   margin-top: calc(var(--spacing) * 17);
@@ -929,11 +910,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -952,6 +928,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 1;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -988,11 +969,11 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-outline-style: solid;
     }
   }
 }

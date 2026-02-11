@@ -9,11 +9,12 @@
 .img-grid-content{
     @apply aspect-[5/3] overflow-hidden;
 }
-
 .img-content-sq{
     @apply aspect-[3/3] overflow-hidden;
 }
-
+.img-content-full{
+    @apply aspect-[full];
+}
 .sec-header{
     @apply text-center font-bold text-2xl p-5 mt-17;
 }
