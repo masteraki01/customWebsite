@@ -26,3 +26,5 @@ fetch("components/menu.html")
     document.getElementById("footer").innerHTML = data;
   })
   .catch(err => console.error("footer load failed:", err));
+
+  
