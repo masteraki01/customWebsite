@@ -830,6 +830,12 @@
       background-color: var(--color-yellow-300);
     }
   }
+  &:hover {
+    @media (hover: hover) {
+      --tw-font-weight: var(--font-weight-extrabold);
+      font-weight: var(--font-weight-extrabold);
+    }
+  }
 }
 .img-grid {
   margin-inline: 0%;
