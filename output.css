@@ -887,8 +887,7 @@
   }
 }
 .img-content-sq {
-  aspect-ratio: 3/3;
-  overflow: hidden;
+  aspect-ratio: 1/1;
 }
 .img-content-comics {
   margin: auto;
