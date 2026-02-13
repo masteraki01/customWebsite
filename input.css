@@ -16,7 +16,7 @@
     
 }
 .img-content-comics{
-    @apply aspect-[full] m-auto  max-w-1/1;
+    @apply aspect-[full] m-auto  max-w-2xl;
 }
 .img-content-full{
     @apply aspect-[full];
