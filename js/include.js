@@ -27,4 +27,23 @@ fetch("components/menu.html")
   })
   .catch(err => console.error("footer load failed:", err));
 
-  
+    const themes = [
+    "theme-primary",
+    "theme-dark",
+    "theme-fairy",
+    "theme-ocean"
+  ];
+
+  let current = 0;
+
+  const applyTheme = () => {
+    document.documentElement.classList.remove(...themes);
+    document.documentElement.classList.add(themes[current]);
+  };
+
+  document.getElementById("themeToggle").addEventListener("click", () => {
+    current = (current + 1) % themes.length;
+    applyTheme();
+  });
+
+  applyTheme();
