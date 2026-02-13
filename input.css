@@ -5,15 +5,16 @@
 
 .theme-primary, body,footer{
      @apply bg-lime-500 text-black;
-       nav{
+    nav{
         @apply bg-lime-500;
     }
     #themeToggle{
         @apply bg-yellow-300 hover:bg-lime-700;
+         }
     footer{
         @apply bg-lime-500;
     }
-    }
+   
         
 }
 .theme-dark, body, footer{
@@ -23,13 +24,14 @@
     }
     #themeToggle{
         @apply bg-white hover:bg-black text-black hover:text-white;
+    }
     .navbar-links{
         @apply hover:bg-lime-500 text-black;
     }
     footer{
         @apply bg-black;
     }
-    }
+   
 
 }
 .theme-fairy, body,footer{
@@ -39,13 +41,14 @@
     }
     #themeToggle{
         @apply bg-blue-400 hover:bg-blue-500;
+         }
     .navbar-links{
         @apply hover:bg-pink-500;
     }
      footer{
         @apply bg-pink-200;
     }
-    }
+   
 }
 .theme-ocean, body,footer{
     @apply bg-blue-300 text-blue-600;
@@ -54,10 +57,11 @@
     }
     #themeToggle{
         @apply bg-sky-200 hover:bg-blue-600;
+        }
      footer{
         @apply bg-sky-200;
     }
-    }
+    
 
 }
 #themeToggle{

@@ -837,9 +837,9 @@
         background-color: var(--color-lime-700);
       }
     }
-    footer {
-      background-color: var(--color-lime-500);
-    }
+  }
+  footer {
+    background-color: var(--color-lime-500);
   }
 }
 .theme-dark, body, footer {
@@ -861,17 +861,17 @@
         color: var(--color-white);
       }
     }
-    .navbar-links {
-      color: var(--color-black);
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-lime-500);
-        }
+  }
+  .navbar-links {
+    color: var(--color-black);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-lime-500);
       }
     }
-    footer {
-      background-color: var(--color-black);
-    }
+  }
+  footer {
+    background-color: var(--color-black);
   }
 }
 .theme-fairy, body,footer {
@@ -887,16 +887,16 @@
         background-color: var(--color-blue-500);
       }
     }
-    .navbar-links {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-pink-500);
-        }
+  }
+  .navbar-links {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-pink-500);
       }
     }
-    footer {
-      background-color: var(--color-pink-200);
-    }
+  }
+  footer {
+    background-color: var(--color-pink-200);
   }
 }
 .theme-ocean, body,footer {
@@ -912,9 +912,9 @@
         background-color: var(--color-blue-600);
       }
     }
-    footer {
-      background-color: var(--color-sky-200);
-    }
+  }
+  footer {
+    background-color: var(--color-sky-200);
   }
 }
 .navbar-links {
