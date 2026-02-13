@@ -33,6 +33,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 0.15);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -358,6 +359,9 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -522,13 +526,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-lime-400);
-      }
-    }
-  }
-  .hover\:bg-lime-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-lime-500);
       }
     }
   }
@@ -725,6 +722,11 @@
       border-radius: 0.25rem;
     }
   }
+  .md\:rounded-3xl {
+    @media (width >= 48rem) {
+      border-radius: var(--radius-3xl);
+    }
+  }
   .md\:border-0 {
     @media (width >= 48rem) {
       border-style: var(--tw-border-style);
@@ -798,7 +800,7 @@
 }
 .navbar-links {
   display: block;
-  border-radius: 0.25rem;
+  border-radius: var(--radius-2xl);
   padding-inline: calc(var(--spacing) * 3);
   padding-block: calc(var(--spacing) * 2);
   &:hover {
