@@ -23,6 +23,9 @@
     }
     #themeToggle{
         @apply bg-white hover:bg-black text-black hover:text-white;
+    .navbar-links{
+        @apply hover:bg-white text-black;
+    }
     footer{
         @apply bg-black;
     }
@@ -36,18 +39,21 @@
     }
     #themeToggle{
         @apply bg-blue-400 hover:bg-blue-500;
+    .navbar-links{
+        @apply hover:bg-pink-500;
+    }
      footer{
         @apply bg-pink-200;
     }
     }
 }
 .theme-ocean body{
-    @apply bg-blue-300 text-white;
+    @apply bg-blue-300 text-blue-600;
     nav{
         @apply bg-sky-200;
     }
     #themeToggle{
-        @apply bg-sky-200 hover:bg-lime-700;
+        @apply bg-sky-200 hover:bg-blue-600;
      footer{
         @apply bg-sky-200;
     }
