@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.theme-primary, body{
+.theme-primary, body,footer{
      @apply bg-lime-500 text-black;
        nav{
         @apply bg-lime-500;
@@ -16,7 +16,7 @@
     }
         
 }
-.theme-dark, body{
+.theme-dark, body, footer{
     @apply bg-black text-white;
       nav{
         @apply bg-black;
@@ -24,7 +24,7 @@
     #themeToggle{
         @apply bg-white hover:bg-black text-black hover:text-white;
     .navbar-links{
-        @apply hover:bg-white text-black;
+        @apply hover:bg-lime-500 text-black;
     }
     footer{
         @apply bg-black;
@@ -32,7 +32,7 @@
     }
 
 }
-.theme-fairy, body{
+.theme-fairy, body,footer{
     @apply bg-pink-500 text-blue-400;
       nav{
         @apply bg-pink-200;
@@ -47,7 +47,7 @@
     }
     }
 }
-.theme-ocean, body{
+.theme-ocean, body,footer{
     @apply bg-blue-300 text-blue-600;
     nav{
         @apply bg-sky-200;
