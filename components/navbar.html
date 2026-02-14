@@ -1,7 +1,6 @@
 <link href="/customWebsite/output.css" rel="stylesheet">
 
-
-
+<body>
 <nav class=" w-full z-20 top-0 start-0">
   <div class="max-w-screen-l flex items-center justify-between mx-auto p-4">
     <a href="https://johnsondo.com" class="hover:text-yellow-300">
@@ -19,12 +18,53 @@
   Change Theme
 </button>
 
+  <script>// ===== THEME SYSTEM =====
+const themes = [
+  "theme-primary",
+  "theme-dark",
+  "theme-fairy",
+  "theme-ocean"
+];
+
+function applyTheme(theme) {
+  document.documentElement.classList.remove(...themes);
+  document.documentElement.classList.add(theme);
+  localStorage.setItem("site-theme", theme);
+}
+
+// Load saved theme immediately
+const savedTheme = localStorage.getItem("site-theme");
+if (savedTheme && themes.includes(savedTheme)) {
+  document.documentElement.classList.add(savedTheme);
+} else {
+  document.documentElement.classList.add(themes[0]);
+}
+
+// Handle button click (works with injected navbar)
+document.addEventListener("click", function (e) {
+  if (e.target && e.target.id === "themeToggle") {
+    const current = localStorage.getItem("site-theme") || themes[0];
+    const index = themes.indexOf(current);
+    const next = themes[(index + 1) % themes.length];
+    applyTheme(next);
+  }
+});
+
+// Sync across tabs
+window.addEventListener("storage", function (e) {
+  if (e.key === "site-theme" && themes.includes(e.newValue)) {
+    document.documentElement.classList.remove(...themes);
+    document.documentElement.classList.add(e.newValue);
+  }
+});
+</script>
+
         
 <!--MOBILE DROP DOWN MENU--> 
     <details class="relative inline-black md:hidden">
   <summary
     class="list-none cursor-pointer flex items-center justify-center
-           bg-green-600 text-white
+           bg-none text-white
            w-10 h-10
            rounded
            focus:outline-none"
@@ -112,4 +152,5 @@
 
    
 </nav>
-  <script src="/js/include.js"></script>
+</body>
+  <script src="customWebsite/js/include.js"></script>

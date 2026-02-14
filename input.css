@@ -3,39 +3,38 @@
 @tailwind components;
 @tailwind utilities;
 
-.theme-primary, body,footer{
-     @apply bg-lime-500 text-black;
-    #themeToggle{
-        @apply bg-yellow-300 hover:bg-lime-700;
-         }
-    footer{
-        @apply bg-lime-500;
-    }
-   
-        
-}
-.theme-dark, body, footer{
-    @apply bg-black text-white;
-      nav{
-        @apply bg-black;
-    }
-    #themeToggle{
-        @apply bg-white hover:bg-black text-black hover:text-white;
-    }
-    .navbar-links{
-        @apply hover:bg-lime-500 text-white;
-    }
-    footer{
-        @apply bg-black;
-    }
-   
+.theme-primary, body,footer,main, nav{
+@apply bg-lime-500 text-blue-200;
 
-}
-.theme-fairy, body,footer{
-    @apply bg-pink-500 text-blue-400;
-      nav{
+    #themeToggle{
+        @apply bg-white hover:bg-blue-500;
+         }
+    .navbar-links{
+         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
+       
+    }
+     footer{
         @apply bg-pink-200;
     }
+}
+.theme-dark, body, footer,main, nav{
+@apply bg-black text-blue-200;
+
+    #themeToggle{
+        @apply bg-white hover:bg-white;
+         }
+    .navbar-links{
+         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
+       
+    }
+     footer{
+        @apply bg-pink-200;
+    }
+
+}
+.theme-fairy, body,footer,main, nav{
+    @apply bg-pink-500 text-blue-200;
+
     #themeToggle{
         @apply bg-blue-400 hover:bg-blue-500;
          }
@@ -48,30 +47,24 @@
     }
    
 }
-.theme-ocean, body,footer{
-    @apply bg-blue-300 text-blue-600;
-    nav{
-        @apply bg-sky-200;
-    }
+.theme-ocean,body,footer,main, nav{
+      @apply bg-blue-500 text-blue-200;
+
+    #themeToggle{
+        @apply bg-blue-900 hover:bg-blue-200;
+         }
     .navbar-links{
-        @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
+         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
-    #themeToggle{
-        @apply bg-sky-200 hover:bg-blue-600;
-        }
      footer{
-        @apply bg-sky-200;
+        @apply bg-pink-200;
     }
-    
-
-}
-#themeToggle{
 
 }
 
 .navbar-links{
-    @apply block py-2 px-3 hover:bg-yellow-300 rounded-3xl hover:scale-115 hover:font-extrabold;
+    @apply  block py-2 px-3 rounded-3xl hover:scale-115 hover:font-extrabold;
 }
 .img-grid{
     @apply  mx-[0%] p-0 grid grid-cols-1 gap-0 md:gap-6 md:mx-[10%] md:grid-cols-3 md:p-10;
