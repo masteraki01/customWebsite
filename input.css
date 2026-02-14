@@ -18,12 +18,15 @@
          button{
         @apply bg-black text-white font-extrabold rounded-none hover:scale-100 hover:text-black ml-3 mr-3 hover:bg-white;
       }
+      .img-hover{
+        @apply rounded-none hover:bg-black hover:border-black border-10;
+      }
     footer{
         @apply bg-lime-500;
     }
 }
 .theme-dark body{
-@apply bg-black text-lime-500;
+@apply bg-black text-lime-500; 
     #themeToggle{
         @apply bg-lime-500 text-black font-extrabold hover:bg-black hover:text-lime-500;
          }
@@ -119,7 +122,7 @@
     @apply aspect-[full];
 }
 .sec-header{
-    @apply font-semibold text-center text-2xl p-5;
+    @apply font-extrabold uppercase text-center text-5xl p-5;
 }
 .img-hover{
     @apply  md:rounded-2xl w-full h-full object-cover transition-transform duration-200 ease-in md:group-hover:scale-180 group-hover:object-contain hover:drop-shadow-2xl hover:border-white/50 hover:border-2 md:hover:bg-white/75  md:hover:max-h-65;
