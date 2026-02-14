@@ -4,18 +4,21 @@
 @tailwind utilities;
 
 .theme-primary body{
-@apply bg-lime-500 text-white;
+@apply bg-lime-500 text-black;
 
     #themeToggle{
-        @apply  hover:bg-green-500;
+        @apply hover:rounded-none hover:bg-white hover:text-black;
          }
          .about-box02{
             @apply text-black;
          }
     .navbar-links{
-         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115; 
+         @apply block py-2 px-3 hover:bg-white  hover:rounded-none ml-3 mr-3 ; 
     }
-     footer{
+         button{
+        @apply bg-black text-white font-extrabold rounded-none hover:scale-100 hover:text-black ml-3 mr-3 hover:bg-white;
+      }
+    footer{
         @apply bg-lime-500;
     }
 }
@@ -28,6 +31,12 @@
          @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:text-white hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
+    summary img{
+        @apply invert-0;
+    }
+     button{
+        @apply bg-lime-500 text-black hover:text-black hover:border-white hover:border-1 rounded-2xl ml-3 mr-3 hover:scale-115 hover:bg-blue-500 rounded-2xl;
+      }
      footer{
         @apply bg-black text-lime-500;
     }
