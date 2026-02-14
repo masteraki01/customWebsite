@@ -4,7 +4,10 @@
 @tailwind utilities;
 
 .theme-primary body{
-@apply bg-lime-500 text-black font-extrabold uppercase ;
+@apply bg-gradient-to-t from-green-600 to-lime-500 text-black font-extrabold uppercase ;
+    span{
+        @apply hover:bg-black rounded-none hover:text-white px-2 p-4;
+    }
 
     #themeToggle{
         @apply hover:rounded-none hover:bg-white hover:text-black;
@@ -21,6 +24,7 @@
       .img-hover{
         @apply rounded-none hover:bg-black hover:border-black border-10;
       }
+
     footer{
         @apply bg-lime-500;
     }
