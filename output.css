@@ -200,6 +200,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .absolute {
     position: absolute;
   }
@@ -242,8 +245,8 @@
   .left-\[75\%\] {
     left: 75%;
   }
-  .z-10 {
-    z-index: 10;
+  .-z-10 {
+    z-index: calc(10 * -1);
   }
   .z-20 {
     z-index: 20;
@@ -377,6 +380,9 @@
       margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .overflow-hidden {
+    overflow: hidden;
   }
   .overflow-y-scroll {
     overflow-y: scroll;
@@ -1008,12 +1014,36 @@
     }
   }
   button {
+    margin-right: calc(var(--spacing) * 3);
+    margin-left: calc(var(--spacing) * 3);
     border-radius: var(--radius-2xl);
-    --tw-gradient-position: to top in oklab;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--color-white);
+    --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-    --tw-gradient-from: var(--color-red-500);
-    --tw-gradient-to: var(--color-pink-300);
+    --tw-gradient-from: color-mix(in oklab, var(--color-white) 0%, transparent);
+    --tw-gradient-to: color-mix(in oklab, var(--color-white) 50%, transparent);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 115%;
+        --tw-scale-y: 115%;
+        --tw-scale-z: 115%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-white);
+      }
+    }
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-blue-500);
@@ -1284,7 +1314,7 @@
 @layer components {
   .bubble {
     position: absolute;
-    bottom: -100px;
+    bottom: -50px;
     border-radius: calc(infinity * 1px);
     background-color: color-mix(in srgb, #fff 30%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1293,7 +1323,7 @@
     --tw-backdrop-blur: blur(var(--blur-md));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    animation: floatUp 12s linear infinite;
+    animation: floatUp 10s linear infinite;
   }
   .animation-delay-1000 {
     animation-delay: 1s;
@@ -1311,7 +1341,7 @@
 @keyframes floatUp {
   0% {
     transform: translateY(0) scale(1);
-    opacity: 0.4;
+    opacity: 1;
   }
   50% {
     opacity: 0.7;
