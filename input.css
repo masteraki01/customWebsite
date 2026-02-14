@@ -3,62 +3,69 @@
 @tailwind components;
 @tailwind utilities;
 
-.theme-primary, body,footer,main, nav{
-@apply bg-lime-500 text-blue-200;
+.theme-primary body{
+@apply bg-lime-500 text-white;
 
     #themeToggle{
-        @apply bg-white hover:bg-blue-500;
+        @apply  hover:bg-yellow-200;
          }
     .navbar-links{
-         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
-       
+         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115; 
     }
      footer{
         @apply bg-pink-200;
     }
 }
-.theme-dark, body, footer,main, nav{
-@apply bg-black text-blue-200;
-
+.theme-dark body{
+@apply bg-black text-lime-500;
     #themeToggle{
-        @apply bg-white hover:bg-white;
+        @apply bg-lime-500 text-black font-extrabold hover:bg-lime-500 hover:text-black;
          }
     .navbar-links{
-         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
+         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:text-white hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
      footer{
-        @apply bg-pink-200;
+        @apply bg-black text-lime-500;
     }
 
 }
-.theme-fairy, body,footer,main, nav{
-    @apply bg-pink-500 text-blue-200;
+.theme-fairy body{
+    @apply bg-gradient-to-t from-pink-500 to-red-200 text-red-200;
+    a{
+        @apply hover:text-red-200;
+    }
+    nav{
+        @apply bg-purple-400;
+    }
+    .img-hover{
+        @apply  md:rounded-2xl w-full h-full object-cover transition-transform duration-200 ease-in md:group-hover:scale-180 group-hover:object-contain hover:drop-shadow-2xl hover:border-white/75 hover:border-2 md:hover:bg-purple-500/75  md:hover:max-h-65; 
+    }
 
     #themeToggle{
-        @apply bg-blue-400 hover:bg-blue-500;
+        @apply bg-purple-500 hover:bg-purple-500;
          }
     .navbar-links{
-         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
+         @apply block py-2 px-3 hover:bg-purple-500 hover:text-white rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
      footer{
-        @apply bg-pink-200;
+        @apply bg-purple-400;
     }
    
 }
-.theme-ocean,body,footer,main, nav{
-      @apply bg-blue-500 text-blue-200;
-
+.theme-ocean body{
+      @apply bg-gradient-to-b from-blue-500 to-white text-white;
     #themeToggle{
-        @apply bg-blue-900 hover:bg-blue-200;
+    @apply bg-gradient-to-t from-green-500 to-lime-300;
          }
+       
     .navbar-links{
          @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
      footer{
-        @apply bg-pink-200;
+        @apply bg-gradient-to-t from-green-500 to-lime-300;
     }
 
 }
