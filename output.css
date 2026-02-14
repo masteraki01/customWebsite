@@ -746,7 +746,10 @@
 }
 .theme-primary body {
   background-color: var(--color-lime-500);
+  --tw-font-weight: var(--font-weight-extrabold);
+  font-weight: var(--font-weight-extrabold);
   color: var(--color-black);
+  text-transform: uppercase;
   #themeToggle {
     &:hover {
       @media (hover: hover) {
@@ -768,8 +771,6 @@
     color: var(--color-black);
   }
   .navbar-links {
-    margin-right: calc(var(--spacing) * 3);
-    margin-left: calc(var(--spacing) * 3);
     display: block;
     padding-inline: calc(var(--spacing) * 3);
     padding-block: calc(var(--spacing) * 2);
@@ -780,7 +781,12 @@
     }
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-white);
+        background-color: var(--color-black);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
@@ -1223,7 +1229,6 @@
   display: block;
   border-radius: var(--radius-3xl);
   padding-inline: calc(var(--spacing) * 3);
-  padding-block: calc(var(--spacing) * 2);
   &:hover {
     @media (hover: hover) {
       --tw-scale-x: 115%;
