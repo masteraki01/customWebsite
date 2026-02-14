@@ -122,7 +122,7 @@
     @apply aspect-[1/1];
 }
 .img-content-comics{
-    @apply aspect-[full] m-auto max-w-2xl drop-shadow-2xl;
+    @apply aspect-[full] m-auto max-w-screen w-2xl ;
 }
 .img-content-full{
     @apply aspect-[full];
