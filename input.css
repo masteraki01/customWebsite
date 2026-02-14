@@ -7,19 +7,22 @@
 @apply bg-lime-500 text-white;
 
     #themeToggle{
-        @apply  hover:bg-yellow-200;
+        @apply  hover:bg-green-500;
+         }
+         .about-box02{
+            @apply text-black;
          }
     .navbar-links{
          @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115; 
     }
      footer{
-        @apply bg-pink-200;
+        @apply bg-lime-500;
     }
 }
 .theme-dark body{
 @apply bg-black text-lime-500;
     #themeToggle{
-        @apply bg-lime-500 text-black font-extrabold hover:bg-lime-500 hover:text-black;
+        @apply bg-lime-500 text-black font-extrabold hover:bg-black hover:text-lime-500;
          }
     .navbar-links{
          @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:text-white hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
@@ -34,6 +37,10 @@
     @apply bg-gradient-to-t from-pink-500 to-red-200 text-red-200;
     a{
         @apply hover:text-red-200;
+    }
+    .sec-header h1{
+        @apply rounded-2xl bg-purple-400 m-auto w-75 h-10;
+
     }
     nav{
         @apply bg-purple-400;
@@ -55,13 +62,21 @@
    
 }
 .theme-ocean body{
-      @apply bg-gradient-to-b from-blue-500 to-white text-white;
+      @apply bg-gradient-to-b from-blue-700 to-blue-500 to-white text-white;
+      .about-box02{
+        @apply bg-gradient-to-t from-green-500 to-lime-300;
+      }
+      .img-hover{
+        @apply border-white/75 border-4;
+      }
+      button{
+        @apply bg-red-500 hover:bg-blue-500 rounded-3xl;
+      }
     #themeToggle{
-    @apply bg-gradient-to-t from-green-500 to-lime-300;
+    @apply bg-gradient-to-t from-green-500 to-lime-300 hover:bg-gradient-to-t hover:from-red-500 hover:to-pink-300;
          }
-       
     .navbar-links{
-         @apply block py-2 px-3 hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
+         @apply block py-2 px-3 hover:animate-pulse hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
      footer{
