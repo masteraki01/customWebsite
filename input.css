@@ -46,12 +46,12 @@
 
 }
 .theme-fairy body{
-    @apply bg-gradient-to-t from-pink-500 to-red-200 text-red-200;
+    @apply font-[fredoka] bg-gradient-to-t from-pink-500 to-red-200 text-white;
     a{
         @apply hover:text-red-200;
     }
     .sec-header h1{
-        @apply rounded-2xl bg-purple-400 m-auto w-75 h-10;
+        @apply rounded-2xl bg-purple-400 m-auto md:w-4xl h-auto;
 
     }
     nav{
@@ -60,12 +60,14 @@
     .img-hover{
         @apply  md:rounded-2xl w-full h-full object-cover transition-transform duration-200 ease-in md:group-hover:scale-180 group-hover:object-contain hover:drop-shadow-2xl hover:border-white/75 hover:border-2 md:hover:bg-purple-500/75  md:hover:max-h-65; 
     }
-
+    button{
+        @apply bg-gradient-to-t from-pink-500 to-red-200;
+    }
     #themeToggle{
         @apply bg-purple-500 hover:bg-purple-500;
          }
     .navbar-links{
-         @apply block py-2 px-3 hover:bg-purple-500 hover:text-white rounded-3xl ml-3 mr-3 hover:scale-115;
+         @apply block py-2 px-3 hover:bg-gradient-to-t from-pink-500 to-red-200 hover:text-white rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
      footer{
@@ -74,7 +76,7 @@
    
 }
 .theme-ocean body{
-      @apply bg-gradient-to-b from-blue-700 to-blue-500 to-white text-white;
+      @apply  bg-gradient-to-b from-blue-700 to-blue-500 to-white text-white;
       .about-box02{
         @apply bg-gradient-to-t from-green-500 to-lime-300;
       }
@@ -82,10 +84,10 @@
         @apply border-white/75 border-4;
       }
       button{
-        @apply border-white border-1 bg-gradient-to-b from-white/0 to-white/50 hover:border-white hover:border-1 rounded-2xl ml-3 mr-3 hover:scale-115 hover:bg-blue-500 rounded-2xl;
+        @apply border-white border-1 bg-gradient-to-b from-white/0 to-white/50 hover:border-white hover:border-1 rounded-2xl  hover:scale-115 hover:bg-blue-500 rounded-2xl;
       }
     #themeToggle{
-    @apply bg-gradient-to-t from-green-500 to-lime-300 hover:bg-gradient-to-t hover:from-red-500 hover:to-pink-300;
+    @apply bg-gradient-to-t from-green-500  to-green-900 to-lime-300 hover:bg-gradient-to-t hover:from-red-500 hover:to-pink-300;
          }
     .navbar-links{
          @apply block py-2 px-3 hover:animate-pulse hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
@@ -101,7 +103,7 @@
 }
 
 .navbar-links{
-    @apply  block px-3 rounded-3xl hover:scale-115 hover:font-extrabold;
+    @apply   block px-3 rounded-3xl hover:scale-115 hover:font-extrabold ;
 }
 .img-grid{
     @apply  mx-[0%] p-0 grid grid-cols-1 gap-0 md:gap-6 md:mx-[10%] md:grid-cols-3 md:p-10;
