@@ -8,7 +8,6 @@
     span{
         @apply hover:bg-black rounded-none hover:text-white px-2 p-4;
     }
-
     #themeToggle{
         @apply hover:rounded-none hover:bg-white hover:text-black;
          }
@@ -16,11 +15,18 @@
             @apply text-black;
          }
     .navbar-links{
-         @apply block py-2 px-3 hover:bg-black hover:text-white  hover:rounded-none ; 
+         @apply block py-2 px-3 bg-black rounded-none text-white hover:bg-white hover:text-black hover:rounded-none md:hover:bg-black md:hover:text-white md:bg-transparent md:text-black ; 
     }
          button{
         @apply bg-black text-white font-extrabold rounded-none hover:scale-100 hover:text-black ml-3 mr-3 hover:bg-white;
       }
+      .dropdown-bg{
+        @apply md:bg-black md:text-white border-0 border-none rounded-none;
+      }
+      .dropdown-bg a{
+        @apply md:text-white md:hover:text-black md:hover:bg-white
+      }
+
       .img-hover{
         @apply rounded-none hover:bg-black hover:border-black border-10;
       }
@@ -97,6 +103,14 @@
          @apply block py-2 px-3 hover:animate-pulse hover:bg-gradient-to-b from-white/0 to-white/80 hover:border-white hover:border-2 rounded-3xl ml-3 mr-3 hover:scale-115;
        
     }
+    .dropdown-bg{
+    @apply  
+    
+      bg-gradient-to-b from-white/80 to-white/0
+      md:shadow-lg
+      md:rounded-3xl
+    border-white border-2 rounded-3xl
+    }
     ul{
         @apply text-black bg-gradient-to-t from-green-500 to-lime-300 border-none md:bg-none md:text-white md:border-none;
     }
@@ -108,6 +122,19 @@
 
 .navbar-links{
     @apply   block px-3 rounded-3xl hover:scale-115 hover:font-extrabold ;
+}
+.dropdown-bg{
+    @apply hidden group-hover:block
+      w-full
+      md:absolute
+      md:left-0
+      md:top-full
+      md:mt-0
+      md:w-48
+    md:p-3
+      md:z-50
+      bg-white
+
 }
 .img-grid{
     @apply  mx-[0%] p-0 grid grid-cols-1 gap-0 md:gap-6 md:mx-[10%] md:grid-cols-3 md:p-10;
