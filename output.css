@@ -679,6 +679,10 @@
   .outline-white {
     outline-color: var(--color-white);
   }
+  .invert {
+    --tw-invert: invert(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
@@ -1024,9 +1028,34 @@
       padding: calc(var(--spacing) * 0);
     }
   }
+  .md\:p-50 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:px-20 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
   .md\:px-50 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:px-75 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 75);
+    }
+  }
+  .md\:px-100 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 100);
+    }
+  }
+  .md\:px-200 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 200);
     }
   }
   .md\:text-left {
