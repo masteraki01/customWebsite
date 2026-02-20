@@ -31,7 +31,7 @@ fetch("components/menu.html")
   
 
   
-// ===== THEME SYSTEM =====
+<!--theme stuff-->
 const themes = [
   "theme-primary",
   "theme-dark",
@@ -45,7 +45,7 @@ function applyTheme(theme) {
   localStorage.setItem("site-theme", theme);
 }
 
-// Load saved theme immediately
+
 const savedTheme = localStorage.getItem("site-theme");
 if (savedTheme && themes.includes(savedTheme)) {
   document.documentElement.classList.add(savedTheme);
@@ -53,7 +53,7 @@ if (savedTheme && themes.includes(savedTheme)) {
   document.documentElement.classList.add(themes[0]);
 }
 
-// Handle button click (works with injected navbar)
+
 document.addEventListener("click", function (e) {
   if (e.target && e.target.id === "themeToggle") {
     const current = localStorage.getItem("site-theme") || themes[0];
@@ -63,10 +63,39 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Sync across tabs
+
 window.addEventListener("storage", function (e) {
   if (e.key === "site-theme" && themes.includes(e.newValue)) {
     document.documentElement.classList.remove(...themes);
     document.documentElement.classList.add(e.newValue);
   }
 });
+
+
+<!--testimonials carasoul-->
+  const slides = document.querySelectorAll("#carousel .slide");
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+
+  let index = 0;
+  const intervalTime = 5000; // Change timing here
+
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.add("hidden"));
+    slides[i].classList.remove("hidden");
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  nextBtn.addEventListener("click", nextSlide);
+  prevBtn.addEventListener("click", prevSlide);
+
+  setInterval(nextSlide, intervalTime);
