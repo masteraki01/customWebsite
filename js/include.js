@@ -99,3 +99,16 @@ window.addEventListener("storage", function (e) {
   prevBtn.addEventListener("click", prevSlide);
 
   setInterval(nextSlide, intervalTime);
+
+  <!--generate highlight for navbar for each page-->
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".navbar-links");
+  const currentPath = window.location.pathname;
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("active-link");
+    }
+  });
+});
