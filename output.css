@@ -533,9 +533,6 @@
   .whitespace-pre-line {
     white-space: pre-line;
   }
-  .text-black {
-    color: var(--color-black);
-  }
   .text-lime-500 {
     color: var(--color-lime-500);
   }
@@ -1441,7 +1438,7 @@
   gap: calc(var(--spacing) * 0);
   padding: calc(var(--spacing) * 0);
   @media (width >= 48rem) {
-    margin-inline: 10%;
+    margin-inline: 0%;
   }
   @media (width >= 48rem) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
