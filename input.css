@@ -139,7 +139,7 @@ body{
 
 }
 .img-grid{
-    @apply  mx-[0%] p-0 grid grid-cols-1 gap-0 md:gap-6 md:mx-[0%] md:grid-cols-3 md:p-10;
+    @apply flex mx-[0%] p-0 grid grid-cols-1 gap-0 md:gap-6 md:mx-[0%] md:grid-cols-3 md:p-10;
 }
 .img-grid-comics{
     @apply mx-[auto] p-0 grid grid-cols-1 gap-0 md:gap-0 md:mx-[10%] md:grid-cols-1 md:p-0;
@@ -155,6 +155,9 @@ body{
 }
 .img-content-full{
     @apply aspect-[full];
+}
+.grid-content-caption{
+  @apply mx-1  text-center md:text-left;
 }
 .sec-header{
     @apply font-extrabold uppercase text-center text-5xl p-5;

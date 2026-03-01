@@ -1456,6 +1456,7 @@ body {
 }
 .img-grid {
   margin-inline: 0%;
+  display: flex;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: calc(var(--spacing) * 0);
@@ -1522,6 +1523,13 @@ body {
 }
 .img-content-full {
   aspect-ratio: full;
+}
+.grid-content-caption {
+  margin-inline: calc(var(--spacing) * 1);
+  text-align: center;
+  @media (width >= 48rem) {
+    text-align: left;
+  }
 }
 .sec-header {
   padding: calc(var(--spacing) * 5);
