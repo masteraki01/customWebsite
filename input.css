@@ -191,7 +191,7 @@ body{
 .active-link {
   @apply bg-yellow-300 text-black font-bold;
 }
-
+/*  */
 @layer components {
 
   .bubble {
