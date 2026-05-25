@@ -144,6 +144,9 @@ body{
 .img-grid{
     @apply flex mx-[0%] p-0 grid grid-cols-1 gap-0 h-auto  md:gap-6 md:mx-[0%] md:grid-cols-3 md:p-10;
 }
+.img-grid2{
+    @apply flex mx-[0%] p-0 grid grid-cols-1 gap-0 h-auto  md:gap-6 md:mx-[0%] md:grid-cols-2 md:p-10;
+}
 .img-grid-comics{
     @apply mx-[auto] p-0 grid grid-cols-1 gap-0 md:gap-0 md:mx-[10%] md:grid-cols-1 md:p-0;
 }
