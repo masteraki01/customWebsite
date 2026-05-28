@@ -29,7 +29,6 @@
       .dropdown-bg a{
         @apply md:text-white md:hover:text-black md:hover:bg-white
       }
-
       .img-hover{
         @apply rounded-none hover:bg-black hover:border-black border-10;
       }
@@ -150,8 +149,11 @@ body{
 .img-grid2{
     @apply flex mx-[0%] p-0 grid grid-cols-1 gap-0 h-auto  md:gap-6 md:mx-[0%] md:grid-cols-2 md:p-10;
 }
+.img-grid3{
+    @apply  my-5 grid grid-cols-8 place-items-center gap-4 ;
+}
 .img-grid-comics{
-    @apply mx-[auto] p-0 grid grid-cols-1 gap-0 md:gap-0 md:mx-[10%] md:grid-cols-1 md:p-0;
+    @apply mx-[auto] p-0 grid grid-cols-1 gap-0 md:gap-0 md:mx-[10%] my-2 md:grid-cols-1 md:p-0;
 }
 .img-grid-content{
     @apply aspect-[5/3] object-cover rounded-lg transition-transform duration-300 ease-in-out md:group-hover:z-50;
@@ -165,6 +167,10 @@ body{
 .img-content-full{
     @apply aspect-[full];
 }
+.softwareicons{
+  @apply p-2 grid grid-cols-10 gap-0 h-auto w-auto max-h-20 md:gap-0 md:mx-[0%] md:grid-cols-10 p-2;
+}
+
 
 .sec-header{
     @apply font-extrabold uppercase text-center text-5xl p-5;
