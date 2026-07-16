@@ -1146,10 +1146,12 @@
       }
     }
   }
-  .sec-header {
+  .sec-header h1 {
     margin: auto;
     height: auto;
     background-color: var(--color-purple-400);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
     @media (width >= 48rem) {
       width: var(--container-4xl);
     }
@@ -1624,8 +1626,8 @@ body {
 .sec-header {
   padding: calc(var(--spacing) * 5);
   text-align: center;
-  font-size: var(--text-5xl);
-  line-height: var(--tw-leading, var(--text-5xl--line-height));
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
   --tw-font-weight: var(--font-weight-extrabold);
   font-weight: var(--font-weight-extrabold);
   text-transform: uppercase;

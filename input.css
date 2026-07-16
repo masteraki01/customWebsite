@@ -65,8 +65,8 @@
     a{
         @apply hover:text-red-200;
     }
-    .sec-header{
-        @apply  bg-purple-400 m-auto md:w-4xl h-auto;
+    .sec-header h1{
+        @apply text-sm bg-purple-400 m-auto md:w-4xl h-auto;
 
     }
     nav{
@@ -173,7 +173,7 @@ body{
 
 
 .sec-header{
-    @apply font-extrabold uppercase text-center text-5xl p-5;
+    @apply font-extrabold uppercase text-center text-xs p-5;
 }
 .sec-subtitle{
   @apply text-center text-white bg-black p-1;
