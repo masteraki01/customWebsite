@@ -66,7 +66,7 @@
         @apply hover:text-red-200;
     }
     .sec-header{
-        @apply rounded-2xl bg-purple-400 m-auto md:w-4xl h-auto;
+        @apply  bg-purple-400 m-auto md:w-4xl h-auto;
 
     }
     nav{

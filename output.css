@@ -1149,7 +1149,6 @@
   .sec-header {
     margin: auto;
     height: auto;
-    border-radius: var(--radius-2xl);
     background-color: var(--color-purple-400);
     @media (width >= 48rem) {
       width: var(--container-4xl);
