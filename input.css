@@ -173,7 +173,7 @@ body{
 
 
 .sec-header{
-    @apply font-extrabold uppercase text-center p-5 overflow-hidden text-9xl md:text-5xl;
+    @apply font-extrabold uppercase text-center p-5 overflow-hidden text-lg md:text-5xl;
 }
 .sec-subtitle{
   @apply text-center text-white bg-black p-1;
